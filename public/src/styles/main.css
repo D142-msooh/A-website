@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* FULL HEIGHT FIX */
+html, body, #root {
+  height: 100%;
+}
+
+/* MAIN BODY BACKGROUND */
+body {
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(
+    135deg,
+    #f3eae6,
+    #e8e4ef
+  );
+  color: #2e2e2e;
+}
+
+/* PAGE WRAPPER */
+.page, .hero {
+  min-height: calc(100vh - 90px);
+  padding: 4rem 6%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info-page {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: #555;
+  text-align: bottom;
+  margin-bottom: 3rem;
+}
+
+.info-page h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #2e2e2e;
+}
+
+.info-page h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #2e2e2e;
+}
+
+/* NAVBAR */
+.nav {
+  height: 150px;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(12px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6%;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav h2 {
+  font-weight: 3500;
+  letter-spacing: 1px;
+}
+
+.nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav a {
+  text-decoration: beige;
+  color: #2e2e2e;
+  font-weight: 500;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  text-size-adjust: initial;
+  font-size: 1.2rem;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  max-width: 9000px;
+  margin: 0 auto;
+  font-size: 1.7rem;
+  color: #555;
+}
+
+/* PORTFOLIO GRID */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+/* PROJECT CARD */
+.project-card {
+  border-radius: 20px;;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  background: beige;
+  overflow: hidden;
+  position: relative;
+
+}
+
+/* FILTER BUTTONS */
+.filters {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.filters button {
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  border: none;
+  background: #d8cfc4;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.filters button.active {
+  background: #2e2e2e;
+  color: #fff;
+}
+
+.project-card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.project-card:hover img {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.6),
+    rgba(0,0,0,0.1)
+  );
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.5rem;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.project-card:hover .overlay {
+  opacity: 1;
+}

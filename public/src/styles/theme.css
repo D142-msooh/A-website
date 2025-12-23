@@ -1,0 +1,19 @@
+.light {
+  background: linear-gradient(135deg, blue, beige);
+  color: #2e2e2e;
+  min-height: 100%;
+}
+
+.dark {
+  background: linear-gradient(135deg, black, black);
+  color: #f2f2f2;
+  min-height: 100%;
+}
+
+.dark .nav {
+  background: brown(30,30,30,0.7);
+}
+
+.dark a {
+  color: #f2f2f2;
+}

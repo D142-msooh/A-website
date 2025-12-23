@@ -1,0 +1,12 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+main {
+  min-height: 100vh;
+}
+
+section {
+  padding: 4rem 2rem;
+}

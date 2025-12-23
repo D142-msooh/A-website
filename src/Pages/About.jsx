@@ -1,5 +1,3 @@
-import profileImage from "../assets/images/irene-photo.jpg";
-
 export default function Info() {
   return (
     <div className="info-page">

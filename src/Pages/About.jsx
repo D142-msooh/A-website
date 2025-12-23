@@ -5,7 +5,6 @@ export default function Info() {
     <div className="info-page">
       <section className="about-intro">
         <div className="about-image-left">
-          <img src={profileImage} alt="Irene" className="profile-photo" />
         </div>
         
         <div className="about-content">

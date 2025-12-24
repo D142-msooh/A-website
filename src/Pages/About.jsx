@@ -17,8 +17,8 @@ export default function Info() {
             worldwide to bring their visions to life through thoughtful, impactful design.
           </p>
           <p>
-            I believe great design is more than aesthetics—it's about solving problems,
-            communicating ideas, and creating experiences that resonate with people.
+            I believe great design is more than aesthetics-it's about solving problems,
+            communicating ideas, and creating experiences that reasonate with people.
           </p>
         </div>
       </section>

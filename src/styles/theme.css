@@ -1,5 +1,5 @@
 .light {
-  background: linear-gradient(135deg, blue, beige);
+  background: linear-gradient(135deg, rgba(0, 0, 255, 0.575), beige);
   color: #2e2e2e;
   min-height: 100%;
 }
